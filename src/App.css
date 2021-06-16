@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+  box-sizing: border-box;
+}
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  overflow: hidden;
+  background: grey;
+}
+
+.App{
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  border-radius: 50%;
+}
+
+.App h2{
+  font-size: 2em;
+    color: #fff;
+}
+
+.App .title{
+  color:red;
+  background-color:yellow;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+}
+
+.App .but{
+  display: flex;
+  flex-direction:row;
+}
+
+.App .but button{
+  margin: 10px;
+  width: 70px;
+  height: 50px;
+  text-transform: uppercase;
+  color: blue;
+  background:orange;
+  font-size: 1.2em;
+  text-align: center;
+  border:none;
+  cursor: pointer;
+}
+.App textarea{
+
+  font-size: 1.5em;
+}
+
+.rules{
+  border:2px solid black;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.rules h3{
+  color: red;
+}
+
+.rules ul{
+  list-style: none;
+}
+
+.rules ul li{
+  color:orange;
+}
+
+
+
+@media screen and (max-width: 800px) {
+      
+      .App{
+        display: flex;
+        flex-direction:column;
+        min-height: 100vh;
+      }
+
+      .App .title{
+        width: 100%;
+        text-align:center;
+      }
+
+      .App .but{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .App textarea{
+        min-width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+  }
